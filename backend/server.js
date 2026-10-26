@@ -79,7 +79,8 @@ app.get("/api/match-schedule", async (req, res) => {
   }
 });
 
-// Start backend server
-app.listen(5000, () => {
-  console.log("Server running at http://localhost:5000");
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+  console.log(`Cricket Zone backend running on port ${PORT}`);
 });
