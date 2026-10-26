@@ -1,0 +1,57 @@
+.scorecard {
+  max-width: 1100px;
+  margin: 0 auto;
+  color: #70A9DE;
+}
+.scorecard-tag {
+  margin: 0 0 12px;
+  color: #70A9DE;
+  font-size: .76rem;
+  font-weight: 800;
+  letter-spacing: .18em;
+}
+.scorecard h2 {
+  margin: 0 0 12px;
+  color: #70A9DE;
+  font: 800 clamp(2rem, 4vw, 3rem)/1.1 Outfit, sans-serif;
+}
+.scorecard h2 span { color: #70A9DE; }
+.scorecard-note {
+  color: #6F9CC6;
+  margin: 0 0 24px;
+}
+.scorecard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+.scorecard-card {
+  padding: 24px;
+  border: 1px solid #C7E2F8;
+  border-radius: 20px;
+  background: #F0F8FF;
+  box-shadow: 0 8px 22px rgba(112, 169, 222, .12);
+}
+.innings-label {
+  margin: 0 0 10px;
+  color: #70A9DE;
+  font-weight: 800;
+  letter-spacing: .06em;
+}
+.innings-score {
+  margin: 0;
+  color: #70A9DE;
+  font: 800 clamp(2rem, 4vw, 3rem)/1.1 Outfit, sans-serif;
+}
+.innings-overs { margin: 8px 0 0; color: #6F9CC6; }
+.scorecard-result {
+  margin-top: 18px;
+  padding: 16px 20px;
+  border-radius: 14px;
+  background: #E3F2FD;
+  color: #70A9DE;
+  font-weight: 800;
+}
+@media (max-width: 600px) {
+  .scorecard-grid { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,213 @@
+
+.live-scores {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 24px;
+}
+
+.live-scores h2 {
+  text-align: center;
+  color: #613d2d;
+  margin-bottom: 24px;
+}
+
+.score-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.score-card {
+  background: #fff9f1;
+  border: 1px solid #f5c9a9;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 5px 15px #613d2d12;
+}
+
+.live-badge {
+  color: #d63838;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.league-name {
+  color: #896d5c;
+  font-size: 13px;
+  margin-top: 14px;
+}
+
+.score-card h3 {
+  color: #613d2d;
+  margin-bottom: 5px;
+}
+
+.team-score {
+  color: #70a9de;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 4px;
+}
+
+.versus {
+  color: #b99b88;
+  font-size: 12px;
+  margin: 14px 0;
+}
+
+.match-status {
+  color: #613d2d;
+  font-weight: bold;
+  margin-top: 18px;
+}
+
+.venue-name {
+  color: #896d5c;
+  font-size: 13px;
+}
+
+.score-message {
+  text-align: center;
+  padding: 24px;
+}
+
+/* CRICKET ZONE - MODERN DESIGN */
+
+body {
+  margin: 0;
+  background: #07111f;
+  color: #f8fafc;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at top, #15345a 0%, #07111f 55%);
+}
+
+.navbar {
+  background: rgba(7, 17, 31, 0.95);
+  border-bottom: 1px solid #263a54;
+  padding: 18px 5%;
+}
+
+.navbar a {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 8px;
+}
+
+.navbar a:hover {
+  color: #38bdf8;
+}
+
+.hero {
+  padding: 75px 6%;
+  color: white;
+}
+
+.hero h1 {
+  font-size: clamp(34px, 6vw, 62px);
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.hero p {
+  color: #b8c7d9;
+  line-height: 1.8;
+}
+
+.section-wrap,
+.live-scores-section {
+  width: min(1100px, 90%);
+  margin: 35px auto;
+}
+
+h2 {
+  color: #7dd3fc;
+  font-size: 28px;
+}
+
+.live-scores-section {
+  padding: 26px;
+  background: #101e30;
+  border: 1px solid #29415d;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.live-match-card {
+  margin-top: 18px;
+  padding: 22px;
+  background: linear-gradient(135deg, #172b43, #0d1929);
+  border: 1px solid #2c4763;
+  border-left: 4px solid #38bdf8;
+  border-radius: 14px;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.live-match-card:hover {
+  transform: translateY(-3px);
+  border-color: #38bdf8;
+}
+
+.live-match-card h3 {
+  color: #f8fafc;
+  line-height: 1.5;
+}
+
+.live-match-card p {
+  color: #c5d4e5;
+  font-size: 16px;
+}
+
+.matches,
+.ipl-teams,
+.scorecard-area {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.ipl-teams > *,
+.matches > * {
+  border-radius: 12px;
+}
+
+.player-card {
+  background: #132238;
+  color: #f8fafc;
+  border: 1px solid #30445d;
+  border-radius: 14px;
+  padding: 18px;
+  margin: 10px;
+}
+
+footer {
+  margin-top: 45px;
+  padding: 25px 12px;
+  text-align: center;
+  color: #9fb3ca;
+  background: #050c16;
+  border-top: 1px solid #263a54;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 45px 6%;
+  }
+
+  .live-scores-section {
+    padding: 16px;
+  }
+
+  .live-match-card {
+    padding: 16px;
+  }
+
+  .navbar a {
+    display: inline-block;
+    margin: 5px;
+  }
+}
